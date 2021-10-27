@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meata name="viewport" content="width=device-width",initial-sclae="1">
+    
+    <style>
+       
+body
+{
+    color:white;
+    background-color:blueviolet;
+    border:1px solid blueviolet;
+}
+
+.container
+{
+    position:relative;
+    max-width:900px;
+    margin:0 auto;
+}
+.container img 
+{
+    vertical-align:middle;
+}
+.container .content
+{
+    position:absolute;
+    background:rgb(0,0,0);
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    width:100%;
+    padding-top:10px;
+
+}
+.imgcontainer
+{
+    position:relative;
+    max-width:900px;
+    margin:0 auto;   
+}
+.imgcontainer img
+{
+    vertical-align: middle;
+}
+
+.imgcontainer .imgcontent
+{
+    position:absolute;
+    top :0;
+    background:rgb(255,182,193);
+    background:rgba(255,182,193,0.5);
+    color:black;
+    width:100%;
+    padding-top:20px;
+    word-spacing: 5px;
+}
+
+
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+  text-align:center;
+  
+  
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+  
+  
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+    
+  
+  
+}
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters">Beautiful Questions</span>
+        </span>
+      </h1>
+<img src="/home/rohith/Desktop/itachi-uchiha-theme-rc4.jpg" style="width:100%;">
+<div class ="content">
+<h1>wrinkle of the day</h1>
+
+<p>
+    this is the new day nor you in the year , so my blesses always
+    for you..
+    &nbsp; thankyou..!
+</p>
+
+</div>
+
+
+
+</div>
+<div class="imgcontainer">
+<img src="https://rukminim1.flixcart.com/image/416/416/k7qinbk0/balloon/7/p/x/100-100-piece-latex-balloon-wall-backdrop-pink-white-red-balloon-original-imafpwq5fjyh8y4h.jpeg?q=70" style="width:100%;">
+<div class="imgcontent">
+    <pre>the man who top of the high he likes the god and he meet the honour people 
+     djflkjfkldjfkdjjfj kndjnfj jn n nn nnnlkkd.
+     What does the prefix para means?
+
+     
+     Para- (prefix): A prefix with many meanings, including: alongside of, beside, near, resembling,
+      beyond, apart from, and abnormal.
+      For example,the parathyroid glands are called "para-thyroid"because they are adjacent to the thyroid...
+       The prefix "para-" comes straight from the Greek. </pre>
+
+
+
+
+
+
+</div>
+
+</div>
+<a href="blur.html">
+<h2 style="text-align:center;"> LINK TO NEXT ONE </h2>
+</a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script type="text/javascript">
+
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml6 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml6 .letter',
+      translateY: ["1.1em", 0],
+      translateZ: 0,
+      duration: 750,
+      delay: (el, i) => 50 * i
+    }).add({
+      targets: '.ml6',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+  
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
